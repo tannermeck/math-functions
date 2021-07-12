@@ -79,7 +79,7 @@ export function sumArrayWithThreeNumbers(sumArr) {
     let arr = [2, 3, 4];
     
     let add1 = sum(arr);
-    console.log(add1)
+    console.log(add1);
 
     return [add1];
 }
