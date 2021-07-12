@@ -12,8 +12,8 @@ example and uses the values that were input into the function:
 */
 
 export function sum(a, b) {
-    const sum = a + b;
-    return [sum, `The sum of ${a} and ${b} is ${sum}.`]; 
+    const sum1 = a + b;
+    return [sum1, `The sum of ${a} and ${b} is ${sum1}.`]; 
 }
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 // Don't forget to create a new branch for your work on the next question!
@@ -52,9 +52,9 @@ how to do this. However, you may continue to use the + operator for string conca
 */
 
 export function sumAndMultiplyThreeNumbers(a, b, c) { //eslint-disable-line
-    const sum = a + b + c;
-    const mult = a * b * c;
-    return [sum, mult, `${a} and ${b} and ${c} sum to ${sum}.`, `The product of ${a} and ${b} and ${c} is ${mult}.`]
+    const sum2 = a + b + c;
+    const mult2 = a * b * c;
+    return [sum2, mult2, `${a} and ${b} and ${c} sum to ${sum2}.`, `The product of ${a} and ${b} and ${c} is ${mult2}.`]
 }
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
@@ -76,7 +76,12 @@ to use the + operator for string concatenation.
 */
 
 export function sumArrayWithThreeNumbers(sumArr) {
+    let arr = [2, 3, 4];
+    
+    let add1 = sum(arr);
+    console.log(add1)
 
+    return [add1];
 }
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
