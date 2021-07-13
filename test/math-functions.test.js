@@ -13,7 +13,7 @@ const test = QUnit.test;
 
 test('sum', (assert) => {
     const result = sum(4, 7);
-    console.log(result);
+
     assert.equal(result[0], 11);
     assert.equal(result[1], 'The sum of 4 and 7 is 11.');
 });
@@ -36,7 +36,7 @@ test('sumAndMultiplyThreeNumbers', (assert) => {
 
 test('sumArrayWithThreeNumbers', (assert) => {
     const result = sumArrayWithThreeNumbers([2, 3, 4]);
-
+    
     assert.equal(result[0], 9);
     assert.equal(result[1], '2,3,4 was passed in as an array of numbers, and 9 is their sum.');
 });
