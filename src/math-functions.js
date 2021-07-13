@@ -129,6 +129,11 @@ This function should be dynamic, accepting an array of any length.
 */
 
 export function multiplyAnyArray(dynamicArray) { //eslint-disable-line
+    let finalTotal = 1;
+    for(let num of dynamicArray) {
+        finalTotal = multiply(finalTotal, num)[0];
+    }
+    return [finalTotal, `The numbers ${dynamicArray} have a product of ${finalTotal}.`];
 
 }
 
